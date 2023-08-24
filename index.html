@@ -9,48 +9,63 @@
   <style>
     body {
       font-family: 'Sono', sans-serif;
- 
+      background-color: #B7C4CF;
   }
   ul li {
   list-style: none; /* Removes bullet points from li elements within ul */
+  margin-bottom: 20px;
 }
   .pricing-container{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     height: 100vh;
     gap: 2rem;
-    
+     
    }
  
    .pricing-plan  {
+    flex: 1;
     background-color: aliceblue;
-    width: 400px;
-    height: 300px;
+    max-width: 400px;
+    /* height: 300px; */
     text-align: center;
+    padding: 20px;
    }
 
   .plan-features {
-    margin: 20px;
+    padding: 0px;
+    margin: 0px;
   }
   .plan-title {
-    height: 20px;
-    font-size: large;
-    font-weight: 500;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: lato;
+    margin-bottom: 10px;
   }
 .plan-button {
-  font-size: 25px;
-  background-color: orangered;
+  font-size: 20px;
+  font-style: bold;
+  background-color: #ff6600;
+  margin-top: 15px;
 }
 .plan-price {
-  font-size: 30px;
+  font-size: 48px;
   font-style: italic;
-
+  font-family: 'Lato'
 }
     /* Hint: What can you do with a media query and flexbox? */
     @media (max-width: 1250px) {
-  
+    .pricing-container {
+      flex-direction: column;
+      height: 100%;
+      
     }
+    }
+  .credit{
+    text-align: center;
+  }
   </style>
 </head>
 
@@ -87,7 +102,9 @@
       <button class="plan-button">Sign Up</a>
     </div>
   </div>
-
+<footer class="credit">
+  <p>Pricing Table Built By Abuzar Niazi Using FlexBox & CSS!</p>
+</footer>
 </body>
 
 </html>
